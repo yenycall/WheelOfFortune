@@ -66,105 +66,105 @@ const tarotCards = [{
         id: 0,
         name: "THE FOOL 바보",
         symbol: "🃏",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 1,
         name: "THE MAGICIAN 마법사",
         symbol: "✨",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 2,
         name: "THE HIGH PRIESTESS 여사제",
         symbol: "🌙",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 3,
         name: " THE EMPRESS 여황제",
         symbol: "👑",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 4,
         name: "THE EMPEROR 황제",
         symbol: "⚔️",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 5,
         name: "THE HIEROPHANT 교황",
         symbol: "📜",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 6,
         name: "THE LOVERS 연인들",
         symbol: "❤️",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 7,
         name: "THE CHARIOT 전차",
         symbol: "🏆",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 8,
         name: "STRENGTH 힘",
         symbol: "💪",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 9,
         name: "THE HERMIT 은둔자",
         symbol: "🔦",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 10,
         name: "WHEEL OF FORTUNE 운명의 수레바퀴",
         symbol: "🎡",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 11,
         name: "JUSTICE 정의",
         symbol: "⚖️",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 12,
         name: "THE HANGED MAN 매달린 사람",
         symbol: "🙃",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 13,
         name: "DEATH 죽음",
         symbol: "💀",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 14,
         name: "TEMPERANCE 절제",
         symbol: "🍵",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
@@ -178,42 +178,42 @@ const tarotCards = [{
         id: 16,
         name: "THE TOWER 탑",
         symbol: "🗼",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 17,
         name: "THE STAR 별",
         symbol: "⭐",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 18,
         name: "THE MOON 달",
         symbol: "🌕",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 19,
         name: "THE SUN 태양",
         symbol: "☀️",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 20,
         name: "JUDGEMENT 심판",
         symbol: "📯",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 21,
         name: "THE WORLD 세계",
         symbol: "🌍",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot.png",
         backImage: "img/card/tarotBack.svg"
     }
 ];
