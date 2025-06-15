@@ -4,8 +4,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* 화면 전체를 채우되 비율 유지 */
-    z-index: -1; /* 다른 요소들 뒤로 */
+    object-fit: cover;
+    z-index: -1;
 }
 
 .gameSection {
@@ -20,7 +20,6 @@
     background: rgba(255, 255, 255, 0.664);
     box-shadow: 0 4px 10px rgba(172, 172, 172, 0.25);
     backdrop-filter: blur(3px);
-    /* -webkit-backdrop-filter: blur(11.8px); */
     border: 1px solid rgba(244, 244, 244, 0.54);
 }
 
@@ -28,23 +27,22 @@
     display: none !important;
 }
 
-/* 게임 관련 스타일 수정 */
 .stage {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 
-.stage-start img{
+.stage-start img {
     width: 50vw;
     margin-bottom: 2vw;
 }
 
 button {
-    background: linear-gradient(180deg,#E5FFB0, #ABFF00);
+    background: linear-gradient(180deg, #E5FFB0, #ABFF00);
     color: #212121;
     border: 0.1vw solid #000;
     padding: 0.5vw 1.5vw;
@@ -61,11 +59,11 @@ button:hover {
     box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
 }
 
-.how-to-play img{
+.how-to-play img {
     width: 32vw;
 }
 
-.how-to-play-content p{
+.how-to-play-content p {
     font-size: 1vw;
     line-height: 1.5vw;
 }
@@ -87,26 +85,25 @@ button:hover {
     height: 1.5vw;
     color: white;
     display: inline-block;
-    /* 또는 inline-flex */
     text-align: center;
     font-size: 1.1vw;
     line-height: 1.5vw;
     margin-right: 1.5vw;
 }
 
-.bold{
+.bold {
     font-weight: 500;
 }
 
-.stage-title{
+.stage-title {
     margin-bottom: 1vw;
 }
 
-.stage-title img{
-    width: 17vw;    
+.stage-title img {
+    width: 17vw;
 }
 
-.stage-description{
+.stage-description {
     font-size: 1vw;
     margin-bottom: 1vw;
     line-height: 1.5vw;
@@ -140,16 +137,16 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cards-container{
+.cards-container {
     margin: 0;
     gap: 2vw;
     display: flex;
 }
 
-.layout2{
+.layout2 {
     display: flex;
     margin-top: 2vw;
     margin-bottom: 2.5vw;
@@ -168,7 +165,7 @@ button:hover {
 }
 
 .game-content.show {
-    display: flex; /* 보일 때만 flex로 */
+    display: flex;
     opacity: 1;
     transform: translateX(0);
     transition: all 0.8s ease;
@@ -182,27 +179,26 @@ button:hover {
     background-color: #fff;
     color: black;
     padding: 1vw;
-    border-radius: 1.2vw;
+    border-radius: 0.5vw;
     width: 30vw;
     height: 16.7vw;
     margin-left: 2vw;
 }
 
-.story-text{
+.story-text {
     padding: 1vw;
     background-color: #212121;
     color: #ABFF00;
-    border-radius: 0.7vw;
+    border-radius: 0.3vw;
     font-size: 1vw;
     font-weight: 500;
 }
 
-#ending-text{
+#ending-text {
     padding: 1.5vw;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 10px rgba(172, 172, 172, 0.25);
     backdrop-filter: blur(5px);
-    /* -webkit-backdrop-filter: blur(11.8px); */
     border: 1px solid rgba(244, 244, 244, 0.54);
     color: white;
     border-radius: 0.7vw;
@@ -212,10 +208,10 @@ button:hover {
     margin: 4vw 0;
 }
 
-.action-choice{
+.action-choice {
     background-color: #f5f5f5;
     padding: 1vw;
-    border-radius: 0.7vw;
+    border-radius: 0.3vw;
     font-size: 1vw;
     font-weight: 400;
     margin-top: 1vw;
@@ -223,11 +219,12 @@ button:hover {
     cursor: pointer;
 }
 
-.action-choice:hover{
+.action-choice:hover {
     background-color: #ABFF00;
 }
+
 .action-choice.selected {
-    background-color: #ABFF00; /* 선택된 상태에서도 같은 색상 유지 */
+    background-color: #ABFF00;
 }
 
 
@@ -252,12 +249,13 @@ button:hover {
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .card.flipped .card-inner {
     transform: rotateY(180deg);
 }
+
 
 .card-front,
 .card-back {
@@ -265,7 +263,7 @@ button:hover {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -299,7 +297,7 @@ button:hover {
 .bgm-button {
     width: 2vw;
     height: 2vw;
-    border: none;    
+    border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -314,10 +312,9 @@ button:hover {
     box-shadow: 0 0 15px rgba(171, 255, 0, 0.5);
 }
 
-/* 재생 삼각형 */
 .bgm-button.play::before {
     content: 'ㅤ';
-    display: inline-block; /* 추가 */
+    display: inline-block;
     width: 12px;
     height: 12px;
     background-image: url('img/play-icon.png');
@@ -328,10 +325,10 @@ button:hover {
     color: #000;
 }
 
-/* 일시정지 아이콘 */
+
 .bgm-button.pause::before {
-    content: 'ㅤ'; /* 공백 하나 */
-    display: block; /* 추가 */
+    content: 'ㅤ';
+    display: block;
     width: 12px;
     height: 12px;
     background-image: url('img/pause-icon.png');

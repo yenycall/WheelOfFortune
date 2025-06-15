@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-body ::selection{
+body ::selection {
     background-color: #aaff0099;
     color: #000;
 }
@@ -24,14 +24,14 @@ header {
     justify-content: center;
     width: 90%;
     position: fixed;
-    transition: transform 0.3s ease; /* 부드러운 애니메이션 */
+    transition: transform 0.3s ease;
+    /* 부드러운 애니메이션 */
 }
 
 header.hidden {
     transform: translateY(-200%);
 }
 
-/* 보임 상태 */
 header.visible {
     transform: translateY(0);
 }
@@ -147,18 +147,15 @@ footer a:hover {
     height: 1.5vw;
     color: white;
     display: inline-block;
-    /* 또는 inline-flex */
     text-align: center;
     font-size: 1.1vw;
     line-height: 1.5vw;
-    /* height와 같게 설정해서 세로 가운데 정렬 */
     margin-left: 4.5vw;
     margin-right: 1.2vw;
 }
 
 main {
     position: relative;
-    /* 부모를 relative로 설정 */
     margin: 4vw 0;
 }
 
@@ -173,26 +170,21 @@ main {
 }
 
 .mainType img {
-    height: 12vw; /* 이미지 높이 고정 */
-    object-fit: contain; /* 비율 유지하면서 맞춤 */
+    height: 12vw;
+    object-fit: contain;
 }
 
 .type3 {
     width: 4vw;
     position: absolute;
     top: 48%;
-    /* 세로 가운데 */
     left: 17.7%;
-    /* 가로 가운데 */
     transform: translate(-50%, -50%);
-    /* 정확한 가운데 정렬 */
     z-index: 1;
-    /* 뒤쪽에 배치 */
     perspective: 1000px;
     animation: flip3D 3s ease-in-out infinite;
     transform-origin: center center;
     transform-style: preserve-3d;
-    /* 3D 변환 유지 */
 }
 
 
@@ -204,7 +196,6 @@ main {
 
     50% {
         transform: rotateY(180deg) rotate(22.5deg)scale(1.5);
-        /* 한 바퀴 돌기 */
     }
 
     100% {
@@ -212,21 +203,14 @@ main {
     }
 }
 
-/* mainType4 이미지 스타일 */
 .type4 {
     width: 4vw;
-    /* main의 직계 자식 img (mainType4) */
     position: absolute;
     top: 55.5%;
-    /* 세로 가운데 */
     left: 78.5%;
-    /* 가로 가운데 */
     transform: translate(-50%, -50%);
-    /* 정확한 가운데 정렬 */
     z-index: 1;
-    /* 뒤쪽에 배치 */
     animation: rotate 3s ease-in-out infinite;
-    /* 회전 애니메이션 */
 }
 
 @keyframes rotate {
@@ -236,7 +220,6 @@ main {
 
     50% {
         transform: translate(-50%, -50%) rotate(180deg) scale(1.5);
-        /* 중간에 1.2배 */
     }
 
     100% {
@@ -244,7 +227,7 @@ main {
     }
 }
 
-.card-deck{
+.card-deck {
     width: 100%;
     margin-bottom: 5vw;
     position: relative;
@@ -252,7 +235,7 @@ main {
     justify-content: center;
 }
 
-.background{
+.background {
     width: 100%;
     height: 40vw;
     z-index: 1;
@@ -266,18 +249,17 @@ main {
     justify-content: center;
 }
 
-.videoTitle{
+.videoTitle {
     position: absolute;
     z-index: 4;
     top: 0%;
-    left:40%;
+    left: 40%;
     font-size: 1.4vw;
     font-weight: 500;
     background: linear-gradient(180deg, #e5ffb0, #abff00);
     color: #212121;
     padding: 0.2vw 1vw;
     margin-top: 2vw;
-    /* transform: rotate(-3deg); */
 }
 
 .card-motion {
@@ -306,7 +288,6 @@ main {
     border-radius: 0.7vw;
     box-shadow: 0 4px 10px rgba(172, 172, 172, 0.25);
     backdrop-filter: blur(3px);
-    /* -webkit-backdrop-filter: blur(11.8px); */
     border: 1px solid rgba(244, 244, 244, 0.54);
 }
 
@@ -314,86 +295,104 @@ main {
     from {
         transform: rotateX(1turn);
     }
+
     to {
         transform: rotateX(0turn);
     }
 }
 
-.card01 { animation: turn 10s calc(1 * -450ms) ease-in-out infinite; }
-.card02 { animation: turn 10s calc(2 * -450ms) ease-in-out infinite; }
-.card03 { animation: turn 10s calc(3 * -450ms) ease-in-out infinite; }
-.card04 { animation: turn 10s calc(4 * -450ms) ease-in-out infinite; }
-.card05 { animation: turn 10s calc(5 * -450ms) ease-in-out infinite; }
-.card06 { animation: turn 10s calc(6 * -450ms) ease-in-out infinite; }
-.card07 { animation: turn 10s calc(7 * -450ms) ease-in-out infinite; }
-.card08 { animation: turn 10s calc(8 * -450ms) ease-in-out infinite; }
-.card09 { animation: turn 10s calc(9 * -450ms) ease-in-out infinite; }
-.card10 { animation: turn 10s calc(10 * -450ms) ease-in-out infinite; }
-.card11 { animation: turn 10s calc(11 * -450ms) ease-in-out infinite; }
-.card12 { animation: turn 10s calc(12 * -450ms) ease-in-out infinite; }
-.card13 { animation: turn 10s calc(13 * -450ms) ease-in-out infinite; }
-.card14 { animation: turn 10s calc(14 * -450ms) ease-in-out infinite; }
-.card15 { animation: turn 10s calc(15 * -450ms) ease-in-out infinite; }
-.card16 { animation: turn 10s calc(16 * -450ms) ease-in-out infinite; }
-.card17 { animation: turn 10s calc(17 * -450ms) ease-in-out infinite; }
-.card18 { animation: turn 10s calc(18 * -450ms) ease-in-out infinite; }
-.card19 { animation: turn 10s calc(19 * -450ms) ease-in-out infinite; }
-.card20 { animation: turn 10s calc(20 * -450ms) ease-in-out infinite; }
-.card21 { animation: turn 10s calc(21 * -450ms) ease-in-out infinite; }
-.card22 { animation: turn 10s calc(22 * -450ms) ease-in-out infinite; }
-
-
-
-#svg2 {
-    width: 150vw;
-    height: 150vw;
-    position: absolute; /* 추가 */
-    top: -5vw; /* 추가 */
-    left: -50vw; /* 왼쪽으로 이동 (조정 가능) */
-    z-index: 3; /* 비디오(z-index: 1)보다 위로 */
-    pointer-events: none; /* 클릭 방지 */
+.card01 {
+    animation: turn 10s calc(1 * -450ms) ease-in-out infinite;
 }
 
-#path3346 {
-    stroke: #ffffff80;
-    stroke-dasharray: 300px;
-    -webkit-animation: spin 10s ease-in-out infinite;
-    -moz-animation: spin 10s ease-in-out infinite;
-    -o-animation: spin 10s ease-in-out infinite;
-    animation: spin 10s ease-in-out infinite;
-    stroke-dashoffset: 100px;
+.card02 {
+    animation: turn 10s calc(2 * -450ms) ease-in-out infinite;
 }
 
-@keyframes spin {
-    0% {
-        stroke-dashoffset: 100px;
-        stroke-width: 1px;
-    }
-    50% {
-        stroke-dashoffset: 500px;
-        stroke-width: 20px;
-    }
-    100% {
-        stroke-dashoffset: 100px;
-        stroke-width: 1px;
-    }
+.card03 {
+    animation: turn 10s calc(3 * -450ms) ease-in-out infinite;
 }
 
-@-webkit-keyframes spin {
-    0% {
-        stroke-dashoffset: 100px;
-        stroke-width: 1px;
-    }
-    50% {
-        stroke-dashoffset: 500px;
-        stroke-width: 20px;
-    }
-    100% {
-        stroke-dashoffset: 100px;
-        stroke-width: 1px;
-    }
+.card04 {
+    animation: turn 10s calc(4 * -450ms) ease-in-out infinite;
 }
 
+.card05 {
+    animation: turn 10s calc(5 * -450ms) ease-in-out infinite;
+}
+
+.card06 {
+    animation: turn 10s calc(6 * -450ms) ease-in-out infinite;
+}
+
+.card07 {
+    animation: turn 10s calc(7 * -450ms) ease-in-out infinite;
+}
+
+.card08 {
+    animation: turn 10s calc(8 * -450ms) ease-in-out infinite;
+}
+
+.card09 {
+    animation: turn 10s calc(9 * -450ms) ease-in-out infinite;
+}
+
+.card10 {
+    animation: turn 10s calc(10 * -450ms) ease-in-out infinite;
+}
+
+.card11 {
+    animation: turn 10s calc(11 * -450ms) ease-in-out infinite;
+}
+
+.card12 {
+    animation: turn 10s calc(12 * -450ms) ease-in-out infinite;
+}
+
+.card13 {
+    animation: turn 10s calc(13 * -450ms) ease-in-out infinite;
+}
+
+.card14 {
+    animation: turn 10s calc(14 * -450ms) ease-in-out infinite;
+}
+
+.card15 {
+    animation: turn 10s calc(15 * -450ms) ease-in-out infinite;
+}
+
+.card16 {
+    animation: turn 10s calc(16 * -450ms) ease-in-out infinite;
+}
+
+.card17 {
+    animation: turn 10s calc(17 * -450ms) ease-in-out infinite;
+}
+
+.card18 {
+    animation: turn 10s calc(18 * -450ms) ease-in-out infinite;
+}
+
+.card19 {
+    animation: turn 10s calc(19 * -450ms) ease-in-out infinite;
+}
+
+.card20 {
+    animation: turn 10s calc(20 * -450ms) ease-in-out infinite;
+}
+
+.card21 {
+    animation: turn 10s calc(21 * -450ms) ease-in-out infinite;
+}
+
+.card22 {
+    animation: turn 10s calc(22 * -450ms) ease-in-out infinite;
+}
+
+
+
+/* codepen 사용 / 출처 표기 */
+/* https://codepen.io/akalaws/pen/LYBNMxJ */
 
 .wheel-container {
     display: grid;
@@ -411,7 +410,8 @@ main {
     background-image: url(https://raw.githubusercontent.com/akaLaws/doodles/c08f1865c1b56cc896a2d1eae480574467512187/wheelnew.svg);
 
     background-repeat: no-repeat;
-    filter: invert(100%) brightness(1); /* 화이트로 변경 */
+    filter: invert(100%) brightness(1);
+    /* 스타일 변경 : 화이트 */
 
     opacity: 0.5;
 
@@ -483,5 +483,5 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1; /* 이 줄 추가 */
+    z-index: 1;
 }

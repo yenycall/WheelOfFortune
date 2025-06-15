@@ -1,3 +1,5 @@
+// 스크롤 시 헤더 숨김 모션
+
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 
@@ -5,11 +7,9 @@ window.addEventListener('scroll', function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-        // 아래로 스크롤 - 헤더 숨기기
         header.classList.add('hidden');
         header.classList.remove('visible');
     } else {
-        // 위로 스크롤 - 헤더 보이기
         header.classList.add('visible');
         header.classList.remove('hidden');
     }
@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const startButton = document.getElementById('start-button');
     const playButton = document.getElementById('play-button');
 
-    // 요소들이 존재하는지 확인 후 이벤트 리스너 추가
     if (startButton) {
         startButton.addEventListener('click', HowToPlay);
     }
@@ -36,14 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
         playButton.addEventListener('click', startGame);
     }
 
-    // How to Play 화면 보여주기
     function HowToPlay() {
         if (introSection) introSection.classList.add('hidden');
         if (howToPlaySection) howToPlaySection.classList.remove('hidden');
         if (gameStageSection) gameStageSection.classList.add('hidden');
     }
 
-    // 게임 시작
     function startGame() {
         if (introSection) introSection.classList.add('hidden');
         if (howToPlaySection) howToPlaySection.classList.add('hidden');
@@ -61,164 +58,143 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 const tarotCards = [{
         id: 0,
         name: "THE FOOL 바보",
-        symbol: "🃏",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot01.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 1,
         name: "THE MAGICIAN 마법사",
-        symbol: "✨",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot02.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 2,
         name: "THE HIGH PRIESTESS 여사제",
-        symbol: "🌙",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot03.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 3,
         name: " THE EMPRESS 여황제",
-        symbol: "👑",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot04.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 4,
         name: "THE EMPEROR 황제",
-        symbol: "⚔️",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot05.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 5,
         name: "THE HIEROPHANT 교황",
-        symbol: "📜",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot06.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 6,
         name: "THE LOVERS 연인들",
-        symbol: "❤️",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot07.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 7,
         name: "THE CHARIOT 전차",
-        symbol: "🏆",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot08.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 8,
         name: "STRENGTH 힘",
-        symbol: "💪",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot09.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 9,
         name: "THE HERMIT 은둔자",
-        symbol: "🔦",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot10.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 10,
         name: "WHEEL OF FORTUNE 운명의 수레바퀴",
-        symbol: "🎡",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot11.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 11,
         name: "JUSTICE 정의",
-        symbol: "⚖️",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot12.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 12,
         name: "THE HANGED MAN 매달린 사람",
-        symbol: "🙃",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot13.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 13,
         name: "DEATH 죽음",
-        symbol: "💀",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot14.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 14,
         name: "TEMPERANCE 절제",
-        symbol: "🍵",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot15.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 15,
         name: "THE DEVIL 악마",
-        symbol: "😈",
-        frontImage: "img/card/tarot.png",
+        frontImage: "img/card/Tarot16.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 16,
         name: "THE TOWER 탑",
-        symbol: "🗼",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot17.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 17,
         name: "THE STAR 별",
-        symbol: "⭐",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot18.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 18,
         name: "THE MOON 달",
-        symbol: "🌕",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot19.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 19,
         name: "THE SUN 태양",
-        symbol: "☀️",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot20.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 20,
         name: "JUDGEMENT 심판",
-        symbol: "📯",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot21.png",
         backImage: "img/card/tarotBack.svg"
     },
     {
         id: 21,
         name: "THE WORLD 세계",
-        symbol: "🌍",
-        frontImage: "img/card/Tarot.png",
+        frontImage: "img/card/Tarot22.png",
         backImage: "img/card/tarotBack.svg"
     }
 ];
 
-// 스테이지 정의 (행동 선택지 추가)
+// 제목 / 배경 이미지 / 스토리 스테이지별 렌더
+// 카드별 행동선택지 3개씩 (action)
+
 const stages = [{
         title: "img/stage1.svg",
         description: `
@@ -233,7 +209,6 @@ const stages = [{
             2: "THE HIGH PRIESTESS : 신중한 통찰 • 내면의 지혜 • 신비한 접근",
             18: "THE MOON : 환상 • 불안 • 내면의 혼란"
         },
-        // 각 카드에 대한 행동 선택지 추가
         actions: {
             0: [{
                     text: "이 배는 침몰해요! 이유는 몰라도... 그냥 확실해요! 믿어주세요!",
@@ -482,9 +457,9 @@ const stages = [{
         cards: [10, 19, 20, 21],
         stories: {
             10: "WHEEL OF FORTUNE : 예측 불가한 전환점",
-            19: "THE WORLD : 종결",
-            20: "THE SUN : 생명력",
-            21: "JUDGEMENT : 최후의 심판"
+            19: "THE SUN : 생명력",
+            20: "JUDGEMENT : 최후의 심판",
+            21: "THE WORLD : 종결",
 
         },
         actions: {
@@ -536,8 +511,8 @@ const ending = {
 
 };
 
+// gameState 부분 GPT 도움
 
-// 기본 게임 상태
 let gameState = {
     currentStage: 0,
     selectedCards: [],
@@ -546,7 +521,6 @@ let gameState = {
     actionPath: []
 };
 
-// DOM 요소
 const introSection = document.getElementById('intro');
 const gameStageSection = document.getElementById('game-stage');
 const endingSection = document.getElementById('ending');
@@ -562,8 +536,6 @@ const restartButton = document.getElementById('restart-button');
 const endingText = document.getElementById('ending-text');
 const gameContent = document.getElementById('game-content');
 
-// 게임 시작
-// DOM 요소 선언 부분 아래에 추가
 if (nextButton) {
     nextButton.addEventListener('click', goToNextStage);
 }
@@ -597,14 +569,12 @@ function loadStage(stageIndex) {
     stageTitle.innerHTML = `<img src="${stage.title}">`;
     stageDescription.innerHTML = stage.description;
 
-    // 초기 상태 설정
     storyText.classList.add('hidden');
     actionChoices.classList.add('hidden');
     gameContent.classList.remove('show');
     cardsContainer.classList.remove('selected-state');
     nextButton.disabled = true;
 
-    // 카드 생성
     createCards(stage.cards);
 
 }
@@ -637,43 +607,36 @@ function createCards(cardIds) {
 
 
 function selectCard(cardElement, cardId) {
-    // 이미 선택된 카드가 있으면 무시
     if (cardsContainer.querySelector('.card.selected')) {
         return;
     }
 
-    // 카드 뒤집기 애니메이션
     cardElement.classList.add('flipped');
     cardElement.classList.add('selected');
 
-    // 다른 카드들 완전히 숨기기
     const allCards = cardsContainer.querySelectorAll('.card');
     allCards.forEach(card => {
         if (card !== cardElement) {
             setTimeout(() => {
                 card.classList.add('hidden');
-            }, 200); // 뒤집기 애니메이션 후 숨김
+            }, 200);
         }
     });
 
-    // 레이아웃 변경
     setTimeout(() => {
         cardsContainer.classList.add('selected-state');
         showStoryAndActions(cardId);
     }, 600);
 
-    // 게임 상태 업데이트
     gameState.selectedCards[gameState.currentStage] = cardId;
 }
 
 function showStoryAndActions(cardId) {
     const stage = stages[gameState.currentStage];
 
-    // 스토리 텍스트 표시
     storyText.textContent = stage.stories[cardId];
     storyText.classList.remove('hidden');
 
-    // 행동 선택지 생성
     actionChoices.innerHTML = '';
     const actions = stage.actions[cardId];
 
@@ -691,19 +654,17 @@ function showStoryAndActions(cardId) {
 }
 
 function selectAction(actionElement, cardId, actionIndex) {
-    // 이미 선택된 행동이 있으면 선택 해제
+
     const selectedAction = actionChoices.querySelector('.action-choice.selected');
     if (selectedAction) {
         selectedAction.classList.remove('selected');
     }
 
-    // 새 행동 선택
+
     actionElement.classList.add('selected');
 
-    // 다음 버튼 활성화
     nextButton.disabled = false;
 
-    // 게임 상태 업데이트
     gameState.selectedActions[gameState.currentStage] = actionIndex;
 }
 
@@ -722,12 +683,12 @@ function showEnding() {
     gameStageSection.classList.add('hidden');
     endingSection.classList.remove('hidden');
 
-    // 간단한 엔딩 메시지
     endingText.innerHTML = `타이타닉이 침몰했습니다.<br>
     타로카드로 한 예측은 사람들에게 신뢰를 얻지 못했을 뿐만 아니라 결국 미래조차 바꾸지 못했습니다.<br>
     당신이 바꿀 수 있었던 것은 배에 탑승하는 것, 구명보트와 구조요청할 선박을 찾는 것, 당신의 행동들로 이루어진 것들 뿐입니다. <br>
     오로지 자신에게 의지해 미래를 헤쳐나가시길 바랍니다. <br><br>
-    SELECTED TAROTS <br> ${gameState.selectedCards.map(id => tarotCards.find(c => c.id === id)?.name).join(' • ')}
+    SELECTED TAROTS <br> 
+    ${gameState.selectedCards.map(id => tarotCards.find(c => c.id === id)?.name).join(' • ')}
     `;
 }
 
@@ -738,9 +699,9 @@ function restartGame() {
 }
 
 
+// 오디오 GPT 도움
 
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const bgmAudio = document.getElementById('bgm-audio');
     const bgmToggle = document.getElementById('bgm-toggle');
     let isPlaying = false;
@@ -748,18 +709,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // 볼륨 설정 (0.0 ~ 1.0)
     bgmAudio.volume = 0.3;
 
-    bgmToggle.addEventListener('click', function() {
+    bgmToggle.addEventListener('click', function () {
         if (isPlaying) {
-            // 음악 일시정지
             bgmAudio.pause();
             bgmToggle.classList.remove('pause');
             bgmToggle.classList.add('play');
             isPlaying = false;
         } else {
-            // 음악 재생
-            bgmAudio.play().catch(function(error) {
+            bgmAudio.play().catch(function (error) {
                 console.log('오디오 재생 실패:', error);
-                // 일부 브라우저에서 사용자 상호작용 없이는 오디오 재생이 불가능할 수 있습니다
             });
             bgmToggle.classList.remove('play');
             bgmToggle.classList.add('pause');
@@ -767,14 +725,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 음악이 끝나면 자동으로 다시 시작 (loop 속성으로 이미 처리됨)
-    bgmAudio.addEventListener('ended', function() {
-        // loop 속성이 있어서 자동으로 반복되지만, 추가적인 처리가 필요하면 여기에
-    });
+    bgmAudio.addEventListener('ended', function () {});
 
     // 음악 로드 에러 처리
-    bgmAudio.addEventListener('error', function() {
+    bgmAudio.addEventListener('error', function () {
         console.log('오디오 파일을 불러올 수 없습니다.');
-        // 에러 발생시 버튼 비활성화 등의 처리
     });
 });
