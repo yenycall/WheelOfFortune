@@ -1,3 +1,22 @@
+// 스크롤 시 헤더 숨김 모션
+
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        header.classList.add('hidden');
+        header.classList.remove('visible');
+    } else {
+        header.classList.add('visible');
+        header.classList.remove('hidden');
+    }
+
+    lastScrollTop = scrollTop;
+});
+
 // 타로카드 js
 const Tarots = [{
         id: 0,
