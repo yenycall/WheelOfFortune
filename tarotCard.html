@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheel of Fortune</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tarot.css">
     <link rel="icon" href="img/favicon.ico" type="img/png">
 </head>
 
@@ -27,6 +28,135 @@
             </nav>
         </header>
 
+        <div class="cardSelectSection" style="display: none;">
+            <div class="questionDisplay"></div>
+            <div class="shuffledCards"></div>
+            <button class="confirmSelection" style="display: none;">NEXT</button>
+        </div>
+
+        <div class="resultSection" style="display: none;">
+            <div class="questionDisplay"></div>
+            <div class="selectedCardDisplay">
+                <div class="selectedCardImage"></div>
+                <div class="cardInfo">
+                    <p class="cardTitle"></p>
+                    <p class="cardKeyword"></p>
+                    <p class="cardDescription"></p>
+                </div>
+            </div>
+            <button class="restartBtn">RESTART</button>
+        </div>
+
+        <div class="layoutTarot">
+
+            <div class="guideBoxTarot">
+                <div class="guideTitleTarot">
+                    <img src="img/playType2.svg">
+                </div>
+                <p class="guideContentTarot">
+                    <span class="stepT">A</span> 눈을 감고 심호흡 후 내면의 나에게 집중한다. <br>
+                    <span class="stepT">B</span> 구체적이고 명확한 질문을 마음 속으로 떠올린다. <br>
+                    <span class="stepT">C</span> 메이저 아르키나 카드 22장을 셔플 후 직감을 통해 카드를 선택한다. <br>
+                    <span class="stepT">D</span> 뽑은 타로카드의 해석에 자신의 질문을 대입하고 다양한 해석을 읽어본다.
+                </p>
+
+                <textarea class="questionT" placeholder="타로카드에게 던지고 싶은 질문을 입력해주세요."></textarea>
+                <button id="StartT" class="StartT">START</button>
+            </div>
+
+
+            <div class="card-motion">
+                <div class="cardMain card01">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card02">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card03">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card04">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card05">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card06">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card07">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card08">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card09">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card10">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card11">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card12">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card13">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card14">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card15">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card16">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card17">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card18">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card19">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card20">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card21">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+                <div class="cardMain card22">
+                    <div class="tarotMainFront"></div>
+                    <div class="tarotMainBack"></div>
+                </div>
+            </div>
+
+        </div>
 
 
         <footer>
@@ -38,7 +168,10 @@
 
     </div>
 
-    <script src="common.js"></script>
+    </div>
+
+
+    <script src="common2.js"></script>
 </body>
 
 </html>

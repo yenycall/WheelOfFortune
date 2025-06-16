@@ -1,0 +1,574 @@
+/* codepen 사용 / 출처 */
+/* https://codepen.io/matt-cannon/pen/emOPOMY */
+/* js는 사용 X / html 및 css 변형 사용 */
+
+.card-motion {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotate3d(0, -5, 5, -30deg) scale(1);
+    perspective: 800px;
+    margin: 28vw 0 27vw 22vw;
+}
+
+.tarotMainFront,
+.tarotMainBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.7vw;
+    transform-style: preserve-3d;
+}
+
+.tarotMainBack {
+    background-image: url('img/card/tarotBack.svg');
+    transform: rotateX(180deg);
+}
+
+.card01 .tarotMainFront {
+    background-image: url('img/card/Tarot01.png');
+}
+
+.card02 .tarotMainFront {
+    background-image: url('img/card/Tarot02.png');
+}
+
+.card03 .tarotMainFront {
+    background-image: url('img/card/Tarot03.png');
+}
+
+.card04 .tarotMainFront {
+    background-image: url('img/card/Tarot04.png');
+}
+
+.card05 .tarotMainFront {
+    background-image: url('img/card/Tarot05.png');
+}
+
+.card06 .tarotMainFront {
+    background-image: url('img/card/Tarot06.png');
+}
+
+.card07 .tarotMainFront {
+    background-image: url('img/card/Tarot07.png');
+}
+
+.card08 .tarotMainFront {
+    background-image: url('img/card/Tarot08.png');
+}
+
+.card09 .tarotMainFront {
+    background-image: url('img/card/Tarot09.png');
+}
+
+.card10 .tarotMainFront {
+    background-image: url('img/card/Tarot10.png');
+}
+
+.card11 .tarotMainFront {
+    background-image: url('img/card/Tarot11.png');
+}
+
+.card12 .tarotMainFront {
+    background-image: url('img/card/Tarot12.png');
+}
+
+.card13 .tarotMainFront {
+    background-image: url('img/card/Tarot13.png');
+}
+
+.card14 .tarotMainFront {
+    background-image: url('img/card/Tarot14.png');
+}
+
+.card15 .tarotMainFront {
+    background-image: url('img/card/Tarot15.png');
+}
+
+.card16 .tarotMainFront {
+    background-image: url('img/card/Tarot16.png');
+}
+
+.card17 .tarotMainFront {
+    background-image: url('img/card/Tarot17.png');
+}
+
+.card18 .tarotMainFront {
+    background-image: url('img/card/Tarot18.png');
+}
+
+.card19 .tarotMainFront {
+    background-image: url('img/card/Tarot19.png');
+}
+
+.card20 .tarotMainFront {
+    background-image: url('img/card/Tarot20.png');
+}
+
+.card21 .tarotMainFront {
+    background-image: url('img/card/Tarot21.png');
+}
+
+.card22 .tarotMainFront {
+    background-image: url('img/card/Tarot22.png');
+}
+
+
+
+.cardMain {
+    position: absolute;
+    width: 10vw;
+    height: 16.7vw;
+    top: 50%;
+    left: 50%;
+
+    transform-origin: top center;
+    transform-style: preserve-3d;
+    will-change: transform;
+    background: none;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes turn {
+    from {
+        transform: rotateX(1turn);
+    }
+
+    to {
+        transform: rotateX(0turn);
+    }
+}
+
+.card01 {
+    animation: turn 10s calc(1 * -450ms) ease-in-out infinite;
+}
+
+.card02 {
+    animation: turn 10s calc(2 * -450ms) ease-in-out infinite;
+}
+
+.card03 {
+    animation: turn 10s calc(3 * -450ms) ease-in-out infinite;
+}
+
+.card04 {
+    animation: turn 10s calc(4 * -450ms) ease-in-out infinite;
+}
+
+.card05 {
+    animation: turn 10s calc(5 * -450ms) ease-in-out infinite;
+}
+
+.card06 {
+    animation: turn 10s calc(6 * -450ms) ease-in-out infinite;
+}
+
+.card07 {
+    animation: turn 10s calc(7 * -450ms) ease-in-out infinite;
+}
+
+.card08 {
+    animation: turn 10s calc(8 * -450ms) ease-in-out infinite;
+}
+
+.card09 {
+    animation: turn 10s calc(9 * -450ms) ease-in-out infinite;
+}
+
+.card10 {
+    animation: turn 10s calc(10 * -450ms) ease-in-out infinite;
+}
+
+.card11 {
+    animation: turn 10s calc(11 * -450ms) ease-in-out infinite;
+}
+
+.card12 {
+    animation: turn 10s calc(12 * -450ms) ease-in-out infinite;
+}
+
+.card13 {
+    animation: turn 10s calc(13 * -450ms) ease-in-out infinite;
+}
+
+.card14 {
+    animation: turn 10s calc(14 * -450ms) ease-in-out infinite;
+}
+
+.card15 {
+    animation: turn 10s calc(15 * -450ms) ease-in-out infinite;
+}
+
+.card16 {
+    animation: turn 10s calc(16 * -450ms) ease-in-out infinite;
+}
+
+.card17 {
+    animation: turn 10s calc(17 * -450ms) ease-in-out infinite;
+}
+
+.card18 {
+    animation: turn 10s calc(18 * -450ms) ease-in-out infinite;
+}
+
+.card19 {
+    animation: turn 10s calc(19 * -450ms) ease-in-out infinite;
+}
+
+.card20 {
+    animation: turn 10s calc(20 * -450ms) ease-in-out infinite;
+}
+
+.card21 {
+    animation: turn 10s calc(21 * -450ms) ease-in-out infinite;
+}
+
+.card22 {
+    animation: turn 10s calc(22 * -450ms) ease-in-out infinite;
+}
+
+
+
+.layoutTarot {
+    display: flex;
+    align-items: center;
+}
+
+.guideBoxTarot {
+    grid-column: span 1;
+    border-radius: 1vw;
+    background-color: #f5f5f5;
+    padding: 2vw;
+    margin: 2vw 0;
+    text-align: center;
+    width: 36.5vw;
+    height: 33.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guideTitleTarot img {
+    width: 80%;
+    justify-self: center;
+}
+
+.guideContentTarot {
+    line-height: 2vw;
+    font-size: 1vw;
+    text-align: left;
+    margin-right: 2vw;
+    flex-shrink: 0;
+}
+
+.stepT {
+    background-color: #212121;
+    width: 1.5vw;
+    height: 1.5vw;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    margin-left: 2vw;
+    margin-right: 1.2vw;
+}
+
+button {
+    background: linear-gradient(180deg, #E5FFB0, #ABFF00);
+    color: #212121;
+    border: 0.1vw solid #000;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border-radius: 3vw;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0.5vw;
+    display: inline-block;
+    flex-shrink: 0;
+    width: auto;
+    align-self: center;
+}
+
+button:hover {
+    transform: translateY(-0.2vw);
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
+}
+
+.questionT {
+    width: 30vw;
+    height: 5vw;
+    margin: 2vw;
+    padding: 1vw;
+    border: 0.1vw solid #ccc;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+    flex-shrink: 0;
+    vertical-align: top;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.questionT:focus {
+    border-color: #ABFF00;
+    box-shadow: 0 0 0.3vw rgba(171, 255, 0, 0.3);
+}
+
+.questionT::placeholder {
+    color: #999;
+    font-size: 0.9vw;
+}
+
+.cardSelectSection,
+.resultSection {
+    margin: 8vw 0;
+    text-align: center;
+}
+
+.questionDisplay {
+    background: #f5f5f5;
+    padding: 1.5vw;
+    width: 35vw;
+    margin-top: -3vw;
+    margin-bottom: 2vw;
+    border-radius: 1.5vw 1.5vw 1.5vw 0;
+    font-size: 1.1vw;
+    font-weight: 400;
+    justify-self: center;
+}
+
+.shuffledCards {
+    position: relative;
+    width: 90vw;
+    height: 40vw;
+    border-radius: 1.5vw 1.5vw 0 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin-bottom: 2vw;
+
+}
+
+.shuffleCard {
+    position: absolute;
+    width: 5vw;
+    height: 8.35vw;
+    background-image: url('img/card/tarotBack.svg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.3s, z-index 0.3s;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    z-index: 1;
+}
+
+/* 카드 셔플 애니메이션 AI 도움 */
+
+.shuffleCard:nth-child(1) {
+    --angle: 0deg;
+}
+
+.shuffleCard:nth-child(2) {
+    --angle: 16.36deg;
+}
+
+.shuffleCard:nth-child(3) {
+    --angle: 32.72deg;
+}
+
+.shuffleCard:nth-child(4) {
+    --angle: 49.08deg;
+}
+
+.shuffleCard:nth-child(5) {
+    --angle: 65.44deg;
+}
+
+.shuffleCard:nth-child(6) {
+    --angle: 81.8deg;
+}
+
+.shuffleCard:nth-child(7) {
+    --angle: 98.16deg;
+}
+
+.shuffleCard:nth-child(8) {
+    --angle: 114.52deg;
+}
+
+.shuffleCard:nth-child(9) {
+    --angle: 130.88deg;
+}
+
+.shuffleCard:nth-child(10) {
+    --angle: 147.24deg;
+}
+
+.shuffleCard:nth-child(11) {
+    --angle: 163.6deg;
+}
+
+.shuffleCard:nth-child(12) {
+    --angle: 179.96deg;
+}
+
+.shuffleCard:nth-child(13) {
+    --angle: 196.32deg;
+}
+
+.shuffleCard:nth-child(14) {
+    --angle: 212.68deg;
+}
+
+.shuffleCard:nth-child(15) {
+    --angle: 229.04deg;
+}
+
+.shuffleCard:nth-child(16) {
+    --angle: 245.4deg;
+}
+
+.shuffleCard:nth-child(17) {
+    --angle: 261.76deg;
+}
+
+.shuffleCard:nth-child(18) {
+    --angle: 278.12deg;
+}
+
+.shuffleCard:nth-child(19) {
+    --angle: 294.48deg;
+}
+
+.shuffleCard:nth-child(20) {
+    --angle: 310.84deg;
+}
+
+.shuffleCard:nth-child(21) {
+    --angle: 327.2deg;
+}
+
+.shuffleCard:nth-child(22) {
+    --angle: 343.56deg;
+}
+
+.shuffleCard.spread {
+    opacity: 1;
+    transform:
+        translate(-50%, -50%) rotate(var(--angle)) translateY(-14vw) rotate(calc(var(--angle) * -1)) scale(1);
+    animation: cardSpread 0.8s ease-out forwards;
+    animation-delay: calc(var(--card-index, 0) * 0.05s);
+}
+
+@keyframes cardSpread {
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%) scale(0.8);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform:
+            translate(-50%, -50%) rotate(calc(var(--angle) * 0.5)) translateY(-7vw) rotate(calc(var(--angle) * -0.5)) scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%) rotate(var(--angle)) translateY(-14vw) rotate(calc(var(--angle) * -1)) scale(1);
+    }
+}
+
+.shuffleCard:hover {
+    z-index: 10;
+}
+
+.shuffleCard.selected {
+    border: 0.2vw solid #ABFF00;
+    border-radius: 0.35vw;
+    box-shadow: 0 0 10px #aaff007c;
+    z-index: 15;
+}
+
+.selectedCardDisplay {
+    display: flex;
+    width: 90vw;
+    height: 40vw;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 1.5vw 1.5vw 0 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin-bottom: 1vw;
+}
+
+.selectedCardImage {
+    width: 15vw;
+    height: 25vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardInfo {
+    text-align: center;
+    max-width: 40vw;
+    background-color: white;
+    height: 21vw;
+    padding: 2vw;
+    border-radius: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardTitle {
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #212121;
+}
+
+.cardKeyword {
+    font-size: 1vw;
+    color: #000;
+    background-color: #ABFF00;
+    padding: 0.2vw 1vw;
+    display: inline-block;
+}
+
+.cardDescription {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 1.5vw 1vw;
+    border-radius: 0.5vw;
+    white-space: pre-line;
+}
+
+.confirmSelection,
+.restartBtn {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 1vw;
+    justify-self: center;
+}
